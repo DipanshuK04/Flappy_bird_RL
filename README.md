@@ -35,6 +35,26 @@ The action space consists of 4 actions -
 
 ![Frozen lake code(results without slippery)](https://github.com/DipanshuK04/Flappy_bird_RL/blob/main/Frozen_lake.ipynb)
 
-# Frozen lake with slippery environment
-![Frozen Lake Gym]
+# 2)Frozen lake with slippery environment
+
+**Description**: For better understanding of the **Policy** and **Value** Iteration using the same Frozen lake environment with slippery conditions.
+
+**ALGORITHM**
+* Policy and Value iteration algorithms are used in this slippery Environment to get the optimal policy.
+
+  
+![Frozen Lake Gym](https://github.com/DipanshuK04/Flappy_bird_RL/blob/main/Frozenlake_slippery.ipynb)
+
+# 3)Empty Room Environment
+
+**Installation:**
+
+pip install minigrid
+
+
+**Description**: To train agent to reach goal state by using different Algorithms,Directions of agent is also considerd.
+## ~Using Monte Carlo Approach:
+![Empty room using Monte Carlo]
+
+
 
