@@ -54,7 +54,7 @@ pip install minigrid
 
 **Description**: To train agent to reach goal state by using different Algorithms,Directions of agent is also considerd.
 ## ~Using Monte Carlo Approach:
-![Empty room using Monte Carlo]
+![Empty room using Monte Carlo](https://github.com/DipanshuK04/Flappy_bird_RL/blob/main/montec.py)
 
 
 
