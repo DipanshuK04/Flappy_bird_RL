@@ -5,10 +5,23 @@
  * Empty room environment using openai gym
     * Using MonteCarlo , Q learning, Sarsa , Sarsa-Lambda Algorithms 
 
+
+## Requirements
+To run this environment, you need to have the following libraries installed:
+- numpy
+- matplotlib
+- gym
+  
 # 1)Frozen lake: 
+
+#### Created in [Frozen-Lake](https://github.com/RaviAgrawal-1824/Assignment-1-Frozen-Lake) environment.
+
 **Description**: For better understanding of the **Policy** and **Value** Iteration using the Frozen lake environment for both Deterministic and Stochastic of fully observable environments.
 
-![Frozen Lake Gym](https://www.gymlibrary.dev/_images/frozen_lake.gif)
+### Non-Slippery Environment
+
+![](https://i.imgur.com/RlJjiZM.gif) ![](https://i.imgur.com/1dpekVN.gif)
+
 
 **ALGORITHM**
 * Policy and Value iteration algorithms are used in this Environment to get the optimal policy.
@@ -37,6 +50,13 @@ The action space consists of 4 actions -
 
 # 2)Frozen lake with slippery environment
 
+### Slippery Environment
+
+![](https://i.imgur.com/9dF44vt.gif)
+
+This Frozen Lake environment is solved by Dynamic Programming Method using Reinforcement learning.
+
+
 **Description**: For better understanding of the **Policy** and **Value** Iteration using the same Frozen lake environment with slippery conditions.
 
 **ALGORITHM**
@@ -62,9 +82,9 @@ The action space Used here -
 	Turn Right - 1
 	Move Forward - 2
 
-## ~Using Monte Carlo Approach:
+## ~Using SARSA Algorithm:
 
-![Empty room results using Monte Carlo](https://github.com/DipanshuK04/Flappy_bird_RL/blob/main/MonteC.ipynb)
+![Results using Sarsa Algorithm](https://github.com/DipanshuK04/Flappy_bird_RL/blob/main/MonteC.ipynb)
 
 
 
