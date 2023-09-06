@@ -68,7 +68,7 @@ This Frozen Lake environment is solved by Dynamic Programming Method using Reinf
 # 3)Empty Room Environment
 
 
-**Description**: To train agent to reach goal state by using different Algorithms,Directions of agent is also considerd.
+**Description**: To train agent to reach goal state by using different Algorithms,Directions of agent is also considerd.In 6x6 and 8x8 minigrid.
 
 
 **Installation:**
@@ -84,7 +84,8 @@ The action space Used here -
 
 ## ~Using SARSA Algorithm:
 
-![Results using Sarsa Algorithm](https://github.com/DipanshuK04/Flappy_bird_RL/blob/main/MonteC.ipynb)
+![Results using Sarsa Algorithm](g2.png)
+![Results using Sarsa Algorithm](g4.png)
 
 
 
