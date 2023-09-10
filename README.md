@@ -18,13 +18,25 @@ To run this environment, you need to have the following libraries installed:
 
 **Description**: For better understanding of the **Policy** and **Value** Iteration using the Frozen lake environment for both Deterministic and Stochastic of fully observable environments.
 
+
 ### Non-Slippery Environment
 
 ![](https://i.imgur.com/RlJjiZM.gif) ![](https://i.imgur.com/1dpekVN.gif)
 
 
 **ALGORITHM**
-* Policy and Value iteration algorithms are used in this Environment to get the optimal policy.
+
+Here Dynamic Programming method is used for convergence of policy.
+This can also be done by two ways
+### Policy Iteration
+  - Evaluating Value function for all states
+  - Acting greedy toward policy using action value function evaluated using value function
+  - Iterated many times upto convergence of policy
+### Value Iteration
+  - Evaluating Value function for particular state
+  - Taking Greedy of all action it can take from that state using Action value function
+  - Then converging policy
+
 
 **STATE SPACE**
 
