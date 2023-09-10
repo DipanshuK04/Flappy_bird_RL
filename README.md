@@ -67,16 +67,31 @@ This Frozen Lake environment is solved by Dynamic Programming Method using Reinf
 
 # 3)Empty Room Environment
 
+#### Created in [MiniGrid-Empty-Environment](https://github.com/Farama-Foundation/MiniGrid) environment.
 
-**Description**: To train agent to reach goal state by using different Algorithms,Directions of agent is also considerd.In 6x6 and 8x8 minigrid.
+## Requirements
+To run this environment, you need to have the following libraries installed:
+- numpy
+- matplotlib
+- gymnasium
+- minigrid
+
+## Description
+**Description**: To train agent to reach terminal state by using different algorithms in 6x6 and 8x8 minigrid environment.
+
+![](https://i.imgur.com/3m9a615.gif) ![](https://i.imgur.com/ahGLjM7.gif)
 
 
-**Installation:**
 
-pip install minigrid
+**Installation**
+Use this code for intalling some library
+- pip install minigrid
+- pip install numpy
+- pip install matplotlib
+- pip install gymnasium
 
 **Action Space**
-The action space Used here -
+** The action space Used here - **
 
 	Turn LEFT - 0
 	Turn Right - 1
@@ -90,7 +105,10 @@ The action space Used here -
 * Agent aim is to reach the final goal state in an optimized way by using the algorithms like Monte-carlo, SARSA, SARSA Lambda, Q-Learning.
 
 
-## ~Using SARSA Algorithm:
+### Rewards
+Every state has 0 reward except at terminal state.
+
+## ~Results Using SARSA Algorithm:
 
 ![Results using Sarsa Algorithm](g2.png)
 ![Results using Sarsa Algorithm](g4.png)
