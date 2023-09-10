@@ -8,9 +8,9 @@
 
 ## Requirements
 To run this environment, you need to have the following libraries installed:
-- numpy
-- matplotlib
-- gym
+- NumPy
+- Matplotlib
+- Gym
   
 # 1)Frozen lake: 
 
