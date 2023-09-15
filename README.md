@@ -82,10 +82,10 @@ This Frozen Lake environment is solved by Dynamic Programming Method using Reinf
 
 ## Requirements
 To run this environment, you need to have the following libraries installed:
-- numpy
-- matplotlib
+- NumPy
+- Matplotlib
 - gymnasium
-- minigrid
+- MiniGrid
 
 **Installation**
 Use this code for intalling some library
@@ -132,3 +132,49 @@ Four algorithm are used to converge the policy and take optimal actions,
 ## Graphs Using Different Algorithms:
 
 ![](https://i.imgur.com/uirrrAY.png) ![](https://i.imgur.com/19KmYUc.png)
+
+
+# Flappy Bird Environment
+
+#### Created in [Flappy-Bird](https://github.com/Talendar/flappy-bird-gym) Environment.
+
+### Requirements
+To run this environment, you need to have the following libraries installed:
+- NumPy
+- flappy_bird_gym (Imported from Github clone)
+- pygame
+- Matplotlib (For plotting graphs)
+- time 
+
+## Description
+
+FlappyBird is the main project. The main aim is to train agent (Bird) to move through maximum pipes without hitting any of the pipe. Any of the previous Algorithms can be used to train the agent.
+
+Algorithm used here to train agent is Q-Learning
+
+
+## Environment Description
+
+### State Space
+
+- This environment contain state as location coordinate of bird's centre in environment.
+- Observation from environment is horizontal distance and vertical distance from centre of next pipe to centre of bird
+- States normalization status is False ie. we are getting states in form of integers
+- Agent also has direction it is going after flap in observation space(Here we have fixed the angle of rotation & direction to 0°)
+
+### Action Space
+
+- There are two actions in this Environment
+  - 0 = Do Nothing
+  - 1 = Flap
+- After taking Flap as action bird changes its direction by 45° (In this case we have taken direction 0°)
+
+### Reward
+
+- Reward is +1 for every step agent (bird) takes.
+- Reward is +5 for crossing each pipe.
+- Reward is -10 if the bird Crashes.
+
+## Algorithm
+
+Flappy Bird Environment is solved by Q-Learning Algorithm.
