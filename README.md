@@ -167,7 +167,7 @@ Algorithm used here to train agent is Q-Learning
 - There are two actions in this Environment
   - 0 = Do Nothing
   - 1 = Flap
-- After taking Flap as action bird changes its direction by 45° (In this case we have taken direction 0°)
+- After taking Flap as action bird changes its direction by 45° (In this case we have fixed the direction to 0°)
 
 ### Reward
 
@@ -178,3 +178,9 @@ Algorithm used here to train agent is Q-Learning
 ## Algorithm
 
 Flappy Bird Environment is solved by Q-Learning Algorithm.
+
+## Results
+
+![](https://i.imgur.com/epEFm8u.gif)
+
+
