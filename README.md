@@ -1,8 +1,8 @@
 # Flappy_bird_RL
 
 ## ~Sub-projects for main project:
- - Frozen lake
- * Empty room environment using openai gym
+ - Frozen lake([Frozen-Lake](https://github.com/RaviAgrawal-1824/Assignment-1-Frozen-Lake))
+ * Empty room environment using openai gym ([MiniGrid-Empty-Environment](https://github.com/Farama-Foundation/MiniGrid) )
     * Using MonteCarlo , Q learning, Sarsa , Sarsa-Lambda Algorithms 
 
 
@@ -18,27 +18,8 @@ To run this environment, you need to have the following libraries installed:
 
 **Description**: For better understanding of the **Policy** and **Value** Iteration using the Frozen lake environment for both Deterministic and Stochastic of fully observable environments.
 
-
-### Non-Slippery Environment
-
-![](https://i.imgur.com/RlJjiZM.gif) ![](https://i.imgur.com/1dpekVN.gif)
-
-
-**ALGORITHM**
-
-Here Dynamic Programming method is used for convergence of policy.
-This can also be done by two ways
-### Policy Iteration
-  - Evaluating Value function for all states
-  - Acting greedy toward policy using action value function evaluated using value function
-  - Iterated many times upto convergence of policy
-### Value Iteration
-  - Evaluating Value function for particular state
-  - Taking Greedy of all action it can take from that state using Action value function
-  - Then converging policy
-
-
-**STATE SPACE**
+## Environment Description
+   **STATE SPACE**
 
 * For 4x4 grid there are 16 cells and each cell represents a integer starting from 0 to 15.
 * Any cell may contain a obstacle (Hole) or Frozen lake and the aim of the agent is to reach the Goal in optimal way using policy and value iteration.
@@ -58,21 +39,39 @@ The action space consists of 4 actions -
 * +1 if the agent reaches the goal cell.
 * 0 otherwise.
 
+
+### Non-Slippery Environment
+
+![](https://i.imgur.com/RlJjiZM.gif) ![](https://i.imgur.com/1dpekVN.gif)
+
+
 ![Frozen lake code(results without slippery)](https://github.com/DipanshuK04/Flappy_bird_RL/blob/main/Frozen_lake.ipynb)
+
+**ALGORITHM**
+
+Here Dynamic Programming method is used for convergence of policy.
+This can also be done by two ways
+### Policy Iteration
+  - Evaluating Value function for all states
+  - Acting greedy toward policy using action value function evaluated using value function
+  - Iterated many times upto convergence of policy
+### Value Iteration
+  - Evaluating Value function for particular state
+  - Taking Greedy of all action it can take from that state using Action value function
+  - Then converging policy
 
 # 2)Frozen lake with slippery environment
 
 ### Slippery Environment
 
-![](https://i.imgur.com/9dF44vt.gif)
-
 This Frozen Lake environment is solved by Dynamic Programming Method using Reinforcement learning.
-
 
 **Description**: For better understanding of the **Policy** and **Value** Iteration using the same Frozen lake environment with slippery conditions.
 
 **ALGORITHM**
 * Policy and Value iteration algorithms are used in this slippery Environment to get the optimal policy.
+  
+![](https://i.imgur.com/9dF44vt.gif)
 
   
 ![Frozen Lake Gym results](https://github.com/DipanshuK04/Flappy_bird_RL/blob/main/Frozenlake_slippery.ipynb)
@@ -88,19 +87,18 @@ To run this environment, you need to have the following libraries installed:
 - gymnasium
 - minigrid
 
-## Description
-**Description**: To train agent to reach terminal state by using different algorithms in 6x6 and 8x8 minigrid environment.
-
-![](https://i.imgur.com/3m9a615.gif) ![](https://i.imgur.com/ahGLjM7.gif)
-
-
-
 **Installation**
 Use this code for intalling some library
 - pip install minigrid
 - pip install numpy
 - pip install matplotlib
 - pip install gymnasium
+
+
+## Description
+**Description**: To train agent to reach terminal state by using different algorithms in 6x6 and 8x8 minigrid environment.
+
+## Environment Decription
 
 **Action Space**
 ** The action space Used here - **
@@ -120,7 +118,17 @@ Use this code for intalling some library
 ### Rewards
 Every state has 0 reward except at terminal state.
 
-## ~Results Using SARSA Algorithm:
+## Algorithms
+Four algorithm are used to converge the policy and take optimal actions,
+- Monte-Carlo
+- SARSA
+- SARSA Lambda
+- Q-Learning
 
-![Results using Sarsa Algorithm](g2.png)
-![Results using Sarsa Algorithm](g4.png)
+## ~Results :
+
+![](https://i.imgur.com/3m9a615.gif) ![](https://i.imgur.com/ahGLjM7.gif)
+
+## Graphs Using Different Algorithms:
+
+![](https://i.imgur.com/uirrrAY.png) ![](https://i.imgur.com/19KmYUc.png)
