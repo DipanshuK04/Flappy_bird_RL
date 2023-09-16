@@ -18,6 +18,8 @@ To run this environment, you need to have the following libraries installed:
 
 **Description**: For better understanding of the **Policy** and **Value** Iteration using the Frozen lake environment for both Deterministic and Stochastic of fully observable environments.
 
+This Frozen Lake environment is solved by Dynamic Programming Method using Reinforcement learning.
+
 ## Environment Description
    **STATE SPACE**
 
@@ -68,6 +70,8 @@ This Frozen Lake environment is solved by Dynamic Programming Method using Reinf
 
 **Description**: For better understanding of the **Policy** and **Value** Iteration using the same Frozen lake environment with slippery conditions.
 
+Agent slips if he reaches a cell having ice ,then lands up in any cell next to current state(cell)  
+
 **ALGORITHM**
 * Policy and Value iteration algorithms are used in this slippery Environment to get the optimal policy.
   
@@ -96,7 +100,9 @@ Use this code for intalling some library
 
 
 ## Description
-**Description**: To train agent to reach terminal state by using different algorithms in 6x6 and 8x8 minigrid environment.
+**Description**: To train agent to reach terminal state by using different algorithms in 6x6 and 8x8 minigrid empty room environment.
+
+This environment is an empty room, and the goal of the agent is to reach the green goal square, which provides a sparse reward.
 
 ## Environment Decription
 
@@ -111,12 +117,23 @@ Use this code for intalling some library
 **State Space**
 * There are 16 states in MiniGrid-Empty-6x6-v0 environment and each cell is represented by (x,y) where x = 1,2,3,4 and y = 1,2,3,4 and also the agent position can be accessed through the built-in function called "agent_pos".
 * Similarily, there are 36 states in MiniGrid-Empty-8x8-v0 environmnet where each cell is represnted by (x,y) where x = 1 to 6 & y = 1 to 6.
-* State space also requires the direction of the agent facing towards that can be accessed through user built-in functions from the minigrid files which is "agent_dir".
+* - State space also contain the direction of the agent at that state, the direction are as follows,
+  	- 0 = Right 
+  	- 1 = Down
+  	- 2 = Left
+  	- 3 = Up
+- Obseravtion contain iamge array which can be used to identify where the agent is in environment.
 * Agent aim is to reach the final goal state in an optimized way by using the algorithms like Monte-carlo, SARSA, SARSA Lambda, Q-Learning.
 
 
 ### Rewards
 Every state has 0 reward except at terminal state.
+
+### Termination
+
+If agent reaches goal
+
+If maximum no. of steps of agent are reached
 
 ## Algorithms
 Four algorithm are used to converge the policy and take optimal actions,
@@ -124,6 +141,7 @@ Four algorithm are used to converge the policy and take optimal actions,
 - SARSA
 - SARSA Lambda
 - Q-Learning
+
 
 ## ~Results :
 
@@ -175,12 +193,28 @@ Algorithm used here to train agent is Q-Learning
 - Reward is +5 for crossing each pipe.
 - Reward is -10 if the bird Crashes.
 
+### Termination
+
+If bird hits pipe or collides with ground
+
+If maximum no. of steps of bird are reached
 ## Algorithm
 
 Flappy Bird Environment is solved by Q-Learning Algorithm.
 
+Q-learning is a model-free reinforcement learning algorithm to learn the value of an action in a particular state.
+
+It does not require a model of the environment (hence "model-free"), and it can handle problems with stochastic transitions and rewards without requiring adaptations.
+
+For any finite Markov decision process, Q-learning finds an optimal policy
+
 ## Results
 
 ![](https://i.imgur.com/epEFm8u.gif)
+
+## Graphs
+
+![GRAPHS](FlappyBirdRL_DK/Final_FlappyBird_All_Graphs.png)
+
 
 
