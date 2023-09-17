@@ -214,7 +214,7 @@ For any finite Markov decision process, Q-learning finds an optimal policy
 
 ## Graphs
 
-![GRAPHS](FlappyBirdRL_DK/Final_FlappyBird_All_Graphs.png)
+![GRAPHS](FlappyBirdRL_DK/final2_GRAPHS.png)
 
 
 
