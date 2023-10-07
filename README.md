@@ -68,11 +68,18 @@ This can also be done by two ways
 
 ### Slippery Environment
 
+** Aim** :
+
+In FROZEN LAKE Environment, We have to make an agent who learns how to reach goal by crossing frozen lakes and Holes.
+
+
+
+** Description**:
+
+For better understanding of the **Policy** and **Value** Iteration using the same Frozen lake environment with slippery conditions.Agent slips if he reaches a cell having ice ,then lands up in any cell next to current state(cell)  
+
 This Frozen Lake environment is solved by Dynamic Programming Method using Reinforcement learning.
 
-**Description**: For better understanding of the **Policy** and **Value** Iteration using the same Frozen lake environment with slippery conditions.
-
-Agent slips if he reaches a cell having ice ,then lands up in any cell next to current state(cell)  
 
 **ALGORITHM**
 * Policy and Value iteration algorithms are used in this slippery Environment to get the optimal policy.
@@ -223,7 +230,7 @@ For any finite Markov decision process, Q-learning finds an optimal policy
 
 ## Results
 
-![](https://i.imgur.com/epEFm8u.gif)
+![](FlappyBirdRL_DK/Result_Flappybird_vid.gif)
 
 ## Graphs
 
