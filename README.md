@@ -1,4 +1,4 @@
-![image](https://github.com/DipanshuK04/Flappy_bird_using_RL/assets/136348241/a10b9d8b-4580-4e77-b179-890b90c223a4)# Flappy_bird_RL
+# Flappy_bird_RL
 
 ## ~Sub-projects for main project:
  - Frozen lake([Frozen-Lake](https://github.com/RaviAgrawal-1824/Assignment-1-Frozen-Lake))
