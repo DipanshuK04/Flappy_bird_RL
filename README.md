@@ -1,4 +1,4 @@
-# Flappy_bird_RL
+![image](https://github.com/DipanshuK04/Flappy_bird_using_RL/assets/136348241/a10b9d8b-4580-4e77-b179-890b90c223a4)# Flappy_bird_RL
 
 ## ~Sub-projects for main project:
  - Frozen lake([Frozen-Lake](https://github.com/RaviAgrawal-1824/Assignment-1-Frozen-Lake))
@@ -15,8 +15,10 @@ To run this environment, you need to have the following libraries installed:
 # 1)Frozen lake: 
 
 #### Created in [Frozen-Lake](https://github.com/RaviAgrawal-1824/Assignment-1-Frozen-Lake) environment.
+**Aim** :  In FROZEN LAKE Environment, We have to make an agent who learns how to reach goal by crossing frozen lakes and Holes.
 
-**Description**: For better understanding of the **Policy** and **Value** Iteration using the Frozen lake environment for both Deterministic and Stochastic of fully observable environments.
+**Description** :  For better understanding of the **Policy** and **Value** Iteration using the Frozen lake environment for both Deterministic and Stochastic of fully observable environments.This environment also involve Non-Slippery (Deterministic) and Slippery (Stochastic) conditions.
+
 
 This Frozen Lake environment is solved by Dynamic Programming Method using Reinforcement learning.
 
@@ -77,12 +79,24 @@ Agent slips if he reaches a cell having ice ,then lands up in any cell next to c
   
 ![](https://i.imgur.com/9dF44vt.gif)
 
-  
-![Frozen Lake Gym results](https://github.com/DipanshuK04/Flappy_bird_RL/blob/main/Frozenlake_slippery.ipynb)
 
 # 3)Empty Room Environment
 
-#### Created in [MiniGrid-Empty-Environment](https://github.com/Farama-Foundation/MiniGrid) environment.
+#### Created in [MiniGrid-Empty-Environment](https://github.com/Farama-Foundation/MiniGrid) .
+
+**Aim:**
+
+* The objective for the agent is to achieve the goal state in the most efficient manner possible.
+
+**Description:**
+
+* The Minigrid Environment is an empty room containing one agent and one goal state, with no obstacles.
+* There are two environments available: MiniGrid-Empty-6x6-v0 and MiniGrid-Empty-8x8-v0.
+* The environment is model-free.
+
+
+![](https://i.imgur.com/4lCwL8g.gif) ![](https://i.imgur.com/tIZ0FNG.gif)
+
 
 ## Requirements
 To run this environment, you need to have the following libraries installed:
@@ -98,9 +112,6 @@ Use this code for intalling some library
 - pip install matplotlib
 - pip install gymnasium
 
-
-## Description
-**Description**: To train agent to reach terminal state by using different algorithms in 6x6 and 8x8 minigrid empty room environment.
 
 This environment is an empty room, and the goal of the agent is to reach the green goal square, which provides a sparse reward.
 
@@ -142,20 +153,27 @@ Four algorithm are used to converge the policy and take optimal actions,
 - SARSA Lambda
 - Q-Learning
 
+## Results
+#### MiniGrid-Empty-6x6-v0
+![Graph 1](https://i.imgur.com/spQjmOb.png)
 
-## ~Results :
-
-![](https://i.imgur.com/3m9a615.gif) ![](https://i.imgur.com/ahGLjM7.gif)
-
-## Graphs Using Different Algorithms:
-
-![](https://i.imgur.com/uirrrAY.png) ![](https://i.imgur.com/19KmYUc.png)
+![Graph 2](https://i.imgur.com/kXaOTd5.png)
 
 
 # Flappy Bird Environment
 
 #### Created in [Flappy-Bird](https://github.com/Talendar/flappy-bird-gym) Environment.
 
+**Aim:**
+* The agent bird learns to score by crossing pipes with the Q-Learning Algorithm.
+
+**Description:**
+
+FlappyBird is the main project. The main aim is to train agent (Bird) to move through maximum pipes without hitting any of the pipe. Any of the previous Algorithms can be used to train the agent.
+
+Algorithm used here to train agent is Q-Learning.
+
+  
 ### Requirements
 To run this environment, you need to have the following libraries installed:
 - NumPy
@@ -164,11 +182,6 @@ To run this environment, you need to have the following libraries installed:
 - Matplotlib (For plotting graphs)
 - time 
 
-## Description
-
-FlappyBird is the main project. The main aim is to train agent (Bird) to move through maximum pipes without hitting any of the pipe. Any of the previous Algorithms can be used to train the agent.
-
-Algorithm used here to train agent is Q-Learning
 
 
 ## Environment Description
