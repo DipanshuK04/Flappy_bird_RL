@@ -15,12 +15,21 @@ To run this environment, you need to have the following libraries installed:
 # 1)Frozen lake: 
 
 #### Created in [Frozen-Lake](https://github.com/RaviAgrawal-1824/Assignment-1-Frozen-Lake) environment.
-**Aim** :  In FROZEN LAKE Environment, We have to make an agent who learns how to reach goal by crossing frozen lakes and Holes.
+**Aim:**
+* In FROZEN LAKE Environment, We have to make an agent who learns how to reach goal by crossing frozen lakes and Holes.
 
-**Description** :  For better understanding of the **Policy** and **Value** Iteration using the Frozen lake environment for both Deterministic and Stochastic of fully observable environments.This environment also involve Non-Slippery (Deterministic) and Slippery (Stochastic) conditions.
-
+**Description:**  
+* This environment is composed of grids in 4x4 and 8x8 sizes. Each grid can either be a frozen lake or a hole, and the objective is to reach the final grid containing a gift.
+* This environment also involve Non-Slippery (Deterministic) and Slippery (Stochastic) conditions.
+* It is Model-Based environment.
 
 This Frozen Lake environment is solved by Dynamic Programming Method using Reinforcement learning.
+
+### Non-Slippery Environment
+
+![](https://i.imgur.com/RlJjiZM.gif) ![](https://i.imgur.com/1dpekVN.gif)
+
+
 
 ## Environment Description
    **STATE SPACE**
@@ -43,15 +52,7 @@ The action space consists of 4 actions -
 * +1 if the agent reaches the goal cell.
 * 0 otherwise.
 
-
-### Non-Slippery Environment
-
-![](https://i.imgur.com/RlJjiZM.gif) ![](https://i.imgur.com/1dpekVN.gif)
-
-
-![Frozen lake code(results without slippery)](https://github.com/DipanshuK04/Flappy_bird_RL/blob/main/Frozen_lake.ipynb)
-
-**ALGORITHM**
+## ALGORITHM
 
 Here Dynamic Programming method is used for convergence of policy.
 This can also be done by two ways
@@ -63,28 +64,44 @@ This can also be done by two ways
   - Evaluating Value function for particular state
   - Taking Greedy of all action it can take from that state using Action value function
   - Then converging policy
+ 
+## Results
+
+#### FrozenLake-v1 (Deterministic)
+
+![Deterministic](https://i.imgur.com/zBB5PSV.png)
+
+
 
 # 2)Frozen lake with slippery environment
 
 ### Slippery Environment
 
-** Aim** :
+**Aim** :
 
-In FROZEN LAKE Environment, We have to make an agent who learns how to reach goal by crossing frozen lakes and Holes.
+* In FROZEN LAKE Environment, We have to make an agent who learns how to reach goal by crossing frozen lakes and Holes.
 
 
 
-** Description**:
+**Description**:
 
-For better understanding of the **Policy** and **Value** Iteration using the same Frozen lake environment with slippery conditions.Agent slips if he reaches a cell having ice ,then lands up in any cell next to current state(cell)  
+* For better understanding of the **Policy** and **Value** Iteration using the same Frozen lake environment with slippery conditions.Agent slips if he reaches a cell having ice ,then lands up in any cell next to current state(cell)  
 
 This Frozen Lake environment is solved by Dynamic Programming Method using Reinforcement learning.
+
+  
+![](https://i.imgur.com/9dF44vt.gif)
+
 
 
 **ALGORITHM**
 * Policy and Value iteration algorithms are used in this slippery Environment to get the optimal policy.
-  
-![](https://i.imgur.com/9dF44vt.gif)
+
+## Results
+
+#### FrozenLake-v1 (Stochastic)
+
+![Stochastic](https://i.imgur.com/bPGPDrX.png)
 
 
 # 3)Empty Room Environment
@@ -124,13 +141,6 @@ This environment is an empty room, and the goal of the agent is to reach the gre
 
 ## Environment Decription
 
-**Action Space**
-** The action space Used here - **
-
-	Turn LEFT - 0
-	Turn Right - 1
-	Move Forward - 2
-
 
 **State Space**
 * There are 16 states in MiniGrid-Empty-6x6-v0 environment and each cell is represented by (x,y) where x = 1,2,3,4 and y = 1,2,3,4 and also the agent position can be accessed through the built-in function called "agent_pos".
@@ -143,22 +153,34 @@ This environment is an empty room, and the goal of the agent is to reach the gre
 - Obseravtion contain iamge array which can be used to identify where the agent is in environment.
 * Agent aim is to reach the final goal state in an optimized way by using the algorithms like Monte-carlo, SARSA, SARSA Lambda, Q-Learning.
 
+  
+**Action Space**
+** The action space Used here - **
+
+	Turn LEFT - 0
+	Turn Right - 1
+	Move Forward - 2
+
 
 ### Rewards
-Every state has 0 reward except at terminal state.
 
+* Success earns a reward of '1 - 0.9 * (step_count / max_steps)' while failure earns '0'.
+* 'max_steps' refers to the maximum number of steps an agent can take in an episode.
+* The 'step_count' records the number of steps taken by the agent during an episode, but it cannot exceed the 'max_steps' limit.
+
+  ## Algorithms
+Four algorithm are used to converge the policy and take optimal actions,
+```bash
+ Monte-Carlo
+ SARSA
+ SARSA Lambda
+ Q-Learning
+```
 ### Termination
 
-If agent reaches goal
+If agent reaches goal.
 
-If maximum no. of steps of agent are reached
-
-## Algorithms
-Four algorithm are used to converge the policy and take optimal actions,
-- Monte-Carlo
-- SARSA
-- SARSA Lambda
-- Q-Learning
+If maximum no. of steps of agent are reached.
 
 ## Results
 #### MiniGrid-Empty-6x6-v0
@@ -176,19 +198,22 @@ Four algorithm are used to converge the policy and take optimal actions,
 
 **Description:**
 
-FlappyBird is the main project. The main aim is to train agent (Bird) to move through maximum pipes without hitting any of the pipe. Any of the previous Algorithms can be used to train the agent.
+* FlappyBird is the main project. The main aim is to train agent (Bird) to move through maximum pipes without hitting any of the pipe. Any of the previous algorithms can be used to train the agent.
 
-Algorithm used here to train agent is Q-Learning.
+* Algorithm used here to train agent is Q-Learning.
+* The Flappy Bird Environment is a model-free environment.
 
   
 ### Requirements
 To run this environment, you need to have the following libraries installed:
 - NumPy
 - flappy_bird_gym (Imported from Github clone)
-- pygame
 - Matplotlib (For plotting graphs)
-- time 
-
+  ```bash
+  pip install Matplotlib
+  pip install NumPy
+  ```
+**Note:** An algorithm Python file was created in the cloned repository folder to import flappy_bird_gym directly into the code.
 
 
 ## Environment Description
@@ -205,7 +230,7 @@ To run this environment, you need to have the following libraries installed:
 - There are two actions in this Environment
   - 0 = Do Nothing
   - 1 = Flap
-- After taking Flap as action bird changes its direction by 45° (In this case we have fixed the direction to 0°)
+In this case we have fixed the direction to 0°
 
 ### Reward
 
